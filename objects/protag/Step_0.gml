@@ -2,7 +2,7 @@
 
 
 var list = ds_list_create();
-var num_obj_surroundings = collision_circle_list(x, y, 45, all, false, true, list, false);
+var num_obj_surroundings = collision_circle_list(x, y, 55, all, false, true, list, false);
 
 // get screen vertical dimension (in pixels, then in y) to be able to calculate height of in game sprites
 var camera_pixels_y = 720;
@@ -18,8 +18,13 @@ for (var i = 0; i < num_obj_surroundings; ++i)
 		{
 			//show_debug_message(y);
 			layer_depth(ds_list_find_value(list, i).layer, layer_get_depth(layer) + 1);
+			ds_list_find_value(list, i).image_alpha = 1;
 		}
-		else layer_depth(ds_list_find_value(list, i).layer, layer_get_depth(layer) - 1);
+		else {
+			layer_depth(ds_list_find_value(list, i).layer, layer_get_depth(layer) - 1);
+		
+			ds_list_find_value(list, i).image_alpha = 0.5;
+		}
 	}
 }
 

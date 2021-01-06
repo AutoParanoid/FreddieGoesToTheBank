@@ -1,0 +1,1 @@
+path_start(RedGuy_path, 2, path_action_restart, true);
