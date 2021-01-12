@@ -1,0 +1,47 @@
+NPC name,unique dialog ID (macro),BRANCH ID,BRANCH Action (script),Lines,Portrait (filename),level values
+asian dude,204,,,Why is this guy shouting at me?,prtr_asian_dude,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1 ]"
+,,0,smoke_no_smoke,He's saying you can't smoke here.,,
+,,1,smoke_to_conductor,(To conductor) What's going on?,,
+,205,,,"Wait, really? Lame...#Then where can I smoke?",prtr_asian_dude,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]"
+,,0,smoke_outside,Outside the station.,,
+,206,,,"Alright, thanks I guess.",prtr_asian_dude,"[ 1, 1, 1, 1, 1, 1 ]"
+,207,,,I'm trying to tell him not to smoke here.,prtr_conductor,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]"
+,,0,smoke_no_smoke,"(To asian man) You can't smoke here, apparently.",,
+,,1,smoke_whats_wrong,What's wrong with that?,,
+,208,,,"Sir, we have rules. Smoking isn't allowed in the station.",prtr_conductor,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]"
+,,0,-1,"Alright, fine.",,
+,,1,smoke_dont_care,I don't care. (Takes out a cigarette),,
+,209,,,"Then I'll have to give you both a fine, sorry.",prtr_conductor,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]"
+,210,,,Why is this guy shouting at me?,prtr_asian_dude,"[ 1, 1, 1, 1, 1, 1, 1 ]"
+,,0,-1,No idea...,,
+,211,,,"Sir, you can't smoke here!",prtr_conductor,"[ 2, 1, 2, 2, 2 ]"
+,,0,-1,Uh... What?,,
+infodesk,0,,,Hello.#How can I help you?,prtr_info,"[ 1, 1, 1, 1, 1, 1 ]"
+,,0,info_food,Where can I get food?,,
+,,1,info_international,Where is the International House?,,
+,,2,info_grant_lvl,[ Do you know what that man is shouting? ],,
+,,3,-1,"Thanks, that's all I wanted to know.",,
+,1,,,Hello.#How can I help you?,prtr_info,"[ 1, 1, 1, 1, 1, 1 ]"
+,,0,info_food,Where can I get food?,,
+,,1,info_international,Where is the International House?,,
+,,2,-1,"Thanks, that's all I wanted to know.",,
+,2,,,The nearest food is in the supermarket right outside the station.,prtr_info,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]"
+,3,,,Across the city center.,prtr_info,"[ 1, 1, 1, 1 ]"
+,4,,,He's telling him not to smoke inside the station.,prtr_info,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1]"
+,,0,-1,"Oh, ok.",,
+,,,,,,
+cofeeoutside,300,,,"Meneer, kan je mij helpen?",prtr_info,"[ 1, 1, 1, 1, 1 ]"
+,,0,coffee_outside_dialog_help,"Uh... Sorry, what?",,
+,301,,,Can you help me?,prtr_info,"[ 1, 1, 1 ]"
+,,0,coffee_outside_dialog_ID_forgot,Help you how?,,
+,302,,,"I want to buy weed, but I forgot my ID. ",prtr_info,"[ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ]"
+,,0,coffee_outside_dialog_whatever,"Sorry, no. It's illegal.",,
+,,1,coffee_outside_dialog_thanks,"Ok, sure.",,
+,303,,,Whatever...,prtr_info,[ 1 ]
+,304,,,Thanks! Just buy whatever is cheapest.,prtr_info,"[ 1, 1, 1, 1, 1, 1 ]"
+,,0,-1,"Alright, be right back.",,
+,,,,,,
+npc0,101,,,Hello traveller.#What can I do for you?,prtr_fem,"[ 1, 4, 1, 2, 2, 2, 2, 1]"
+,,0,100085,"Potion-seller, I want you to give me your strongest potion!",,
+,,1,-1,Nothing.,,
+,102,,,"My potions are much too strong for you, traveller; they would surely kill you!",prtr_fem,"[ 1, 7, 1, 3, 3, 4, 1, 1, 4, 2, 3, 5, 4, 1 ]"
