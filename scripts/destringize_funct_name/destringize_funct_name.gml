@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function destringize_funct_name(argument0){
 	
-	var funct_id = [ info_food, info_international, info_grant_lvl, smoke_no_smoke, smoke_outside, smoke_whats_wrong, smoke_dont_care, smoke_to_conductor, coffee_outside_dialog_help, coffee_outside_dialog_ID_forgot, coffee_outside_dialog_thanks, coffee_outside_dialog_whatever, -1];
-	var funct_names = ["info_food", "info_international", "info_grant_lvl", "smoke_no_smoke", "smoke_outside", "smoke_whats_wrong", "smoke_dont_care", "smoke_to_conductor", "coffee_outside_dialog_help", "coffee_outside_dialog_ID_forgot", "coffee_outside_dialog_thanks", "coffee_outside_dialog_whatever", "-1"];
+	var funct_id = [ info_food, info_international, info_grant_lvl, smoke_no_smoke, smoke_outside, smoke_whats_wrong, smoke_dont_care, smoke_to_conductor, coffee_outside_dialog_help, coffee_outside_dialog_ID_forgot, coffee_outside_dialog_thanks, coffee_outside_dialog_whatever, super_dialog_bank, super_dialog_maestro, super_dialog_nope, -1];
+	var funct_names = ["info_food", "info_international", "info_grant_lvl", "smoke_no_smoke", "smoke_outside", "smoke_whats_wrong", "smoke_dont_care", "smoke_to_conductor", "coffee_outside_dialog_help", "coffee_outside_dialog_ID_forgot", "coffee_outside_dialog_thanks", "coffee_outside_dialog_whatever", "super_dialog_bank", "super_dialog_maestro", "super_dialog_nope", "-1"];
 
 	
 	for (var i = 0; i < array_length(funct_names); ++i){

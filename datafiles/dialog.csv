@@ -39,7 +39,14 @@ cofeeoutside,300,,,"Meneer, kan je mij helpen?",prtr_info,"[ 1, 1, 1, 1, 1 ]"
 ,,1,coffee_outside_dialog_thanks,"Ok, sure.",,
 ,303,,,Whatever...,prtr_info,[ 1 ]
 ,304,,,Thanks! Just buy whatever is cheapest.,prtr_info,"[ 1, 1, 1, 1, 1, 1 ]"
-,,0,-1,"Alright, be right back.",,
+,,0,-1,"Alright, be right back.",prtr_info,
+supermarketdude,310,,,"6 euros, please.",prtr_info,
+,,0,super_dialog_maestro,Do you take the mastercard?,prtr_info,
+,311,,,"Sorry, no.#Do you have a maestro maybe?",prtr_info,
+,,0,super_dialog_bank,No. Where can I get one?,prtr_info,
+,312,,,"At the bank, across the center from here.",prtr_info,
+,,0,super_dialog_nope,"Ok, thanks! And sorry for all the... stuff. ",prtr_info,
+,313,,,Don't worry about it.,prtr_info,
 ,,,,,,
 npc0,101,,,Hello traveller.#What can I do for you?,prtr_fem,"[ 1, 4, 1, 2, 2, 2, 2, 1]"
 ,,0,100085,"Potion-seller, I want you to give me your strongest potion!",,

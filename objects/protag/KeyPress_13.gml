@@ -34,4 +34,17 @@ if (conductIsNear && !inDialog)
 	inDialog = true;
 }
 
+var superGirlIsNear = collision_circle(x, y, 35, SupermarketGirl_obj, false, false);
+if (superGirlIsNear && !inDialog)
+{
+	
+	// call event whenever close to npc0, for npc0 to listen and launch dialog
+	super_dialog_begin();
+	
+	// prevent loading dialog while already in dialog
+	if (instance_exists(obj_dialog)){
+		inDialog = true;
+	}
+}
+
 
