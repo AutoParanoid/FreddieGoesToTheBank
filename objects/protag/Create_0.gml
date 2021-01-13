@@ -1,5 +1,7 @@
 /// @description 
 
+audio_play_sound(ambient, 10, true)
+
 // annoyance meter stuff
 hp = 50;
 hp_max = hp;
@@ -26,3 +28,7 @@ facingLeft = true;
 inDialog = false;
 
 event_register_script(event.dialogFinished, id, dialog_exit);
+
+// check to launch small indication after talking to bank teller
+spokenWithBankTeller = false;
+alreadySpokenWithBankTeller = false;
