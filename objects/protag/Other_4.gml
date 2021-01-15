@@ -73,9 +73,16 @@ else if (room = StudentAccomodationGroundRoom){
 	}
 }
 else if (room = StudentAccomodationTopRoom){
-	x = 350;
-	y = 190;
-	inSHTop = true;
+	if(!inPlayerRoom){
+		x = 350;
+		y = 190;
+		inSHTop = true;
+	}
+	else {
+		x = 400;
+		y = 300;
+		inPlayerRoom = false;
+	}
 }
 else if (room = CityHallRoom){
 	x = 28;
@@ -106,5 +113,10 @@ else if (room = UniversityRoom){
 	x = 573;
 	y = 684;
 	inUni = true;
+}
+else if (room = player_room){
+	x = 100;
+	y = 93;
+	inPlayerRoom = true;	
 }
 		

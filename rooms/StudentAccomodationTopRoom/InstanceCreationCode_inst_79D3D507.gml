@@ -1,0 +1,1 @@
+targetRoom = player_room;

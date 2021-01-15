@@ -62,3 +62,9 @@ if (bankTellerIsNear && !inDialog)
 	}
 }
 
+var sandwichIsNear = collision_circle(x, y, 35, sandwich_obj, false, false);
+if (sandwichIsNear && !inDialog)
+{
+	sandwich_obj.bites++;
+}
+
