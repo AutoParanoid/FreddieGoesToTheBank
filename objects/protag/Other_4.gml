@@ -45,6 +45,21 @@ if (room = CityCentre){
 		y = 156;
 		inUni = false;
 	}
+	else if (inGrinder){
+		x = 1055;
+		y = 670;
+		inGrinder = false;
+	}
+	else if (inEier){
+		x = 254;
+		y = 253;
+		inEier = false;
+	}
+	else if (inZon){
+		x = 222;
+		y = 1504;
+		inZon = false;
+	}
 }
 else if (room = room0){
 	if (!inCenter){
@@ -70,6 +85,11 @@ else if (room = StudentAccomodationGroundRoom){
 		x = 255;
 		y = 285;
 		inSHTop = false;
+	}
+	else if (inMysteryBabyDisgustIntended){
+		x = 192;
+		y = 132;
+		inMysteryBabyDisgustIntended = false;
 	}
 }
 else if (room = StudentAccomodationTopRoom){
@@ -118,5 +138,17 @@ else if (room = player_room){
 	x = 100;
 	y = 93;
 	inPlayerRoom = true;	
+}
+else if (room = GrinderRoom){
+	inGrinder = true;	
+}
+else if (room = EierbalRoom){
+	inEier = true;	
+}
+else if (room = NoorderzonRoom){
+	inZon = true;	
+}
+else if (room = BabyPhotoRoom){
+	inMysteryBabyDisgustIntended = true;	
 }
 		

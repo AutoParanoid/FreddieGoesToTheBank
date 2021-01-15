@@ -2,13 +2,13 @@
 // You can write your code in this editor
 
 var protagIsNear= collision_circle(x, y, 35, protag, false, false);
-if (protagIsNear && !talkedToProtag){
-	talkedToProtag = true;
+if (protagIsNear && !protag.talkedToNico0){
+	protag.talkedToNico0 = true;
 	
 	dialog_nico0_begin();
 	
 	protag.inDialog = true;
 }
-else if (talkedToProtag && !protag.inDialog){
+else if (protag.talkedToNico0 && !protag.inDialog){
 	instance_destroy(self)	
 }

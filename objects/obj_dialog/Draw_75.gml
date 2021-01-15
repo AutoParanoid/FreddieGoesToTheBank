@@ -52,32 +52,40 @@ for(var i = 0; i <= _curstring_arr; ++i)
 // Draw all branches
 if(_branching && _draw_branches)
 {
+	var name;
 	
-	// Draw the branches box
-	draw_9slice(spr_dialog_frame, 0, x_std, y_std + dialogHeight, dialog_width, branchesHeight, 64, 64);
-	
-	text_y = dialogHeight + 32 + y_std;
 	for(var i = 0; i < options; ++i)
 	{
-		var name = dialog_get_branch_name(key, i);
+	
+		name = dialog_get_branch_name(key, i);
+	
+		if (name != "blank"){
+			if (i == 0){
+				// Draw the branches box
+				draw_9slice(spr_dialog_frame, 0, x_std, y_std + dialogHeight, dialog_width, branchesHeight, 64, 64);
+	
+				text_y = dialogHeight + 32 + y_std;
+			}
+			// Draw selection highlight
+			if(i == selected_branch) draw_sprite(spr_dialog_selected, 0, x_std, text_y - 5);
 		
-		// Draw selection highlight
-		if(i == selected_branch) draw_sprite(spr_dialog_selected, 0, x_std, text_y - 5);
-		
-		// Draw the branch
-		draw_text(text_x, text_y, name);
-		text_y += line_height * 3 / 2;
+			// Draw the branch
+			draw_text(text_x, text_y, name);
+			text_y += line_height * 3 / 2;
+		}
 	}
 	
-	// Draw protag avatar
-	if (left_facing) {
-		draw_9slice(spr_portrait_box, 0, x_std + dialog_width, y_std + dialogHeight, branchesHeight, branchesHeight, 64, 64);
-		draw_sprite(prtr_mal, 0, x_std + dialog_width, y_std + dialogHeight);	
-	}
-	else 
-	{
-		draw_9slice(spr_portrait_box, 0, x_std - branchesHeight, y_std + dialogHeight, branchesHeight, branchesHeight, 64, 64);
-		draw_sprite_ext(prtr_mal, 0, x_std, y_std + dialogHeight, -1, 1, 0, c_white, 1);
+	if (name != "blank"){
+		// Draw protag avatar
+		if (left_facing) {
+			draw_9slice(spr_portrait_box, 0, x_std + dialog_width, y_std + dialogHeight, branchesHeight, branchesHeight, 64, 64);
+			draw_sprite(prtr_mal, 0, x_std + dialog_width, y_std + dialogHeight);	
+		}
+		else 
+		{
+			draw_9slice(spr_portrait_box, 0, x_std - branchesHeight, y_std + dialogHeight, branchesHeight, branchesHeight, 64, 64);
+			draw_sprite_ext(prtr_mal, 0, x_std, y_std + dialogHeight, -1, 1, 0, c_white, 1);
+		}
 	}
 }
 //else if (_branching && _draw_branches && minigame){
