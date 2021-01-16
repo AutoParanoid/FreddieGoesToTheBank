@@ -3,7 +3,7 @@
   "volume": 1.0,
   "parentRoom": null,
   "views": [
-    {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
+    {"inherit":false,"visible":true,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
     {"inherit":false,"visible":false,"xview":0,"yview":0,"wview":1366,"hview":768,"xport":0,"yport":0,"wport":1366,"hport":768,"hborder":32,"vborder":32,"hspeed":-1,"vspeed":-1,"objectId":null,},
@@ -14,9 +14,7 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"TurbanGuy_obj","path":"objects/TurbanGuy_obj/TurbanGuy_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.018944446,"scaleY":0.0189444423,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":141.94,"y":188.76001,"resourceVersion":"1.0","name":"inst_4EE0221E","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"CulturalObject_obj","path":"objects/CulturalObject_obj/CulturalObject_obj.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":0.07570371,"scaleY":0.0757037,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":32.0,"resourceVersion":"1.0","name":"inst_3071F30F","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"JewishGuy_obj","path":"objects/JewishGuy_obj/JewishGuy_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.02,"scaleY":0.02,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":113.0,"y":187.0,"resourceVersion":"1.0","name":"inst_12E7E12A","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Dialogue_Layer","tags":[],"resourceType":"GMRInstanceLayer",},
     {"instances":[
@@ -29,7 +27,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.15625,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":277.0,"y":326.0,"resourceVersion":"1.0","name":"inst_1AC24A0C","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.34375,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":139.0,"y":84.0,"resourceVersion":"1.0","name":"inst_6091ED1A","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.609375,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":229.5,"y":84.0,"resourceVersion":"1.0","name":"inst_53DA35F7","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.34375,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":382.0,"y":85.0,"resourceVersion":"1.0","name":"inst_7AE864F3","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.34375,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":378.0,"y":93.0,"resourceVersion":"1.0","name":"inst_7AE864F3","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.34375,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":49.0,"y":83.0,"resourceVersion":"1.0","name":"inst_509B7A98","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-89.87225,"scaleX":1.35714841,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":202.999985,"y":338.0,"resourceVersion":"1.0","name":"inst_4CB26EA2","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-89.87225,"scaleX":1.35714841,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":152.0,"y":338.0,"resourceVersion":"1.0","name":"inst_613A7675","tags":[],"resourceType":"GMRInstance",},
@@ -49,6 +47,7 @@
         {"properties":[],"isDnd":false,"objectId":{"name":"blocker_obj","path":"objects/blocker_obj/blocker_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":-89.87225,"scaleX":2.07589936,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":277.999969,"y":150.0,"resourceVersion":"1.0","name":"inst_E128B89","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"neighbor_obj","path":"objects/neighbor_obj/neighbor_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.02,"scaleY":0.02,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":410.0,"y":288.0,"resourceVersion":"1.0","name":"inst_19D4ED6D","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Teleporter","path":"objects/Teleporter/Teleporter.yy",},"inheritCode":false,"hasCreationCode":true,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":447.0,"y":293.0,"resourceVersion":"1.0","name":"inst_79D3D507","tags":[],"resourceType":"GMRInstance",},
+        {"properties":[],"isDnd":false,"objectId":{"name":"TurbanGuy_obj","path":"objects/TurbanGuy_obj/TurbanGuy_obj.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":0.02,"scaleY":0.02,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":159.0,"y":207.0,"resourceVersion":"1.0","name":"inst_1A817ECC","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":200,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"assets":[
         {"spriteId":{"name":"StudentHousingInteriorTop","path":"sprites/StudentHousingInteriorTop/StudentHousingInteriorTop.yy",},"headPosition":0.0,"rotation":0.0,"scaleX":0.27785182,"scaleY":0.2778518,"animationSpeed":1.0,"colour":4294967295,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-24.0,"y":-24.0,"resourceVersion":"1.0","name":"graphic_7ACF4665","tags":[],"resourceType":"GMRSpriteGraphic",},
@@ -85,13 +84,12 @@
     {"name":"inst_17ACDB11","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
     {"name":"inst_7E55C106","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
     {"name":"inst_25400426","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
-    {"name":"inst_4EE0221E","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
     {"name":"inst_2056D3D5","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
     {"name":"inst_E128B89","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
     {"name":"inst_3071F30F","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
     {"name":"inst_19D4ED6D","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
     {"name":"inst_79D3D507","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
-    {"name":"inst_12E7E12A","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
+    {"name":"inst_1A817ECC","path":"rooms/StudentAccomodationTopRoom/StudentAccomodationTopRoom.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,
@@ -103,7 +101,7 @@
   },
   "viewSettings": {
     "inheritViewSettings": false,
-    "enableViews": false,
+    "enableViews": true,
     "clearViewBackground": false,
     "clearDisplayBuffer": true,
   },

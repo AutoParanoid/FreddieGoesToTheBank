@@ -9,6 +9,11 @@ if (protagIsNear && !protag.talkedToNico0){
 	
 	protag.inDialog = true;
 }
-else if (protag.talkedToNico0 && !protag.inDialog){
-	instance_destroy(self)	
+else if (protag.talkedToNico0 && !protag.inDialog && x != updatedX0){
+	instance_destroy();
+}
+else if (x == updatedX0 && ((protag.x - neighbor_obj.x) < 200)){
+	dialog_begin_ramadan0();
+	
+	protag.inDialog = true;
 }

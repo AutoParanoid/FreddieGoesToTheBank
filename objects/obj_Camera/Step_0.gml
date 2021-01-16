@@ -12,3 +12,17 @@ if (follow != noone)
 
 var vm = matrix_build_lookat(xTo, yTo, -10, xTo, yTo, 0, 0, 1, 0);
 camera_set_view_mat(camera_id, vm);
+
+if (panning && !panned){
+	follow = noone;
+	
+	xTo = lerp(x, targetX, 0.8);
+	yTo = lerp(y, targetY, 0.8);
+				
+	width = lerp(width, targetWidth, 0.02);
+	height = lerp(height, targetHeight, 0.02);
+		
+	var pm = matrix_build_projection_ortho(width, height, 1, 10000);
+	camera_set_proj_mat(camera_id, pm);
+	view_camera[0] = camera_id;
+}

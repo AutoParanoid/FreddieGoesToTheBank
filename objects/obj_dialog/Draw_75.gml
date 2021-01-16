@@ -13,10 +13,7 @@ draw_set_alpha(image_alpha);
 var line_height = string_height("a"); // std string height
 var dialog_width = dialog_get_width();
 
-// in case there are characters without a portrait
-var x_offset = 0;
-
-var x_std = 350 + x_offset;
+var x_std = 350;
 var y_std = 400;
 
 dialog_avatar = destringify_prtr_name(dialog_get_portrait(key));
