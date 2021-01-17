@@ -33,4 +33,7 @@ function init_dialog_ramadan0(){
 	
 	#macro DIALOG_RAMADAN0_10 360
 	dialog_parse_csv(DIALOG_RAMADAN0_10);
+	
+	#macro DIALOG_RAMADAN0_11 361
+	dialog_parse_csv(DIALOG_RAMADAN0_11);
 }

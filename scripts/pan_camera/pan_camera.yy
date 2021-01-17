@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "ramadan0",
-    "path": "folders/Scripts/Dialog/dorm/ramadan0.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "pan_to_nico",
+  "name": "pan_camera",
   "tags": [],
   "resourceType": "GMScript",
 }

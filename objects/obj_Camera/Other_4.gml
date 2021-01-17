@@ -24,6 +24,9 @@ if (room_width < width){
 	width = room_width;
 }
 
+orig_width = width;
+orig_height = height;
+
 // set original camera position to be right on top of player character
 var vm = matrix_build_lookat(protag.x, protag.y, -10, protag.x, protag.y, 0, 0, 1, 0)
 // 1005x720 is a large enough resolution that conserves the proper aspect ratio

@@ -83,6 +83,12 @@ if (!inDialog)
 	{
 		vert_spd = -mvSpd;
 	} 
+	
+	with (obj_Camera){
+		width = orig_width;
+		height = orig_height;
+		camera_set_proj_mat(camera_id, matrix_build_projection_ortho(width, height, 1, 10000));
+	}
 }
 
 y += vert_spd;
