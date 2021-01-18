@@ -1,3 +1,3 @@
-/// @description Insert description here
+/// @description Bank form support
 // You can write your code in this editor
-global.previous_room = 0;
+global.the_last_room = room;

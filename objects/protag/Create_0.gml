@@ -32,3 +32,5 @@ event_register_script(event.dialogFinished, id, dialog_exit);
 // check to launch small indication after talking to bank teller
 spokenWithBankTeller = false;
 alreadySpokenWithBankTeller = false;
+
+global.the_last_room = 0;

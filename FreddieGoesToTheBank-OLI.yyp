@@ -151,6 +151,7 @@
     {"id":{"name":"CoffeeShopeDude_obj","path":"objects/CoffeeShopeDude_obj/CoffeeShopeDude_obj.yy",},"order":0,},
     {"id":{"name":"StudentHousingInteriorTop","path":"sprites/StudentHousingInteriorTop/StudentHousingInteriorTop.yy",},"order":20,},
     {"id":{"name":"dialog_add_start_event","path":"scripts/dialog_add_start_event/dialog_add_start_event.yy",},"order":5,},
+    {"id":{"name":"BankAccountForm","path":"sprites/BankAccountForm/BankAccountForm.yy",},"order":13,},
     {"id":{"name":"dialog_add_start_condition","path":"scripts/dialog_add_start_condition/dialog_add_start_condition.yy",},"order":7,},
     {"id":{"name":"CoffeeShop_1","path":"sprites/CoffeeShop_1/CoffeeShop_1.yy",},"order":40,},
     {"id":{"name":"Bar","path":"sprites/Bar/Bar.yy",},"order":27,},
@@ -276,6 +277,7 @@
     {"id":{"name":"ramadan0_dialog_complicated","path":"scripts/ramadan0_dialog_complicated/ramadan0_dialog_complicated.yy",},"order":9,},
     {"id":{"name":"Sprite38","path":"sprites/Sprite38/Sprite38.yy",},"order":7,},
     {"id":{"name":"ramadan0_dialog_pizza","path":"scripts/ramadan0_dialog_pizza/ramadan0_dialog_pizza.yy",},"order":6,},
+    {"id":{"name":"BankAccountRoom","path":"rooms/BankAccountRoom/BankAccountRoom.yy",},"order":26,},
     {"id":{"name":"femal_walk_left","path":"sprites/femal_walk_left/femal_walk_left.yy",},"order":0,},
     {"id":{"name":"init_nico0_dialog","path":"scripts/init_nico0_dialog/init_nico0_dialog.yy",},"order":0,},
     {"id":{"name":"NewBank_obj_1","path":"objects/NewBank_obj_1/NewBank_obj_1.yy",},"order":10,},
@@ -424,6 +426,7 @@
     {"roomId":{"name":"GrinderRoom","path":"rooms/GrinderRoom/GrinderRoom.yy",},},
     {"roomId":{"name":"CarbidShooterRoom","path":"rooms/CarbidShooterRoom/CarbidShooterRoom.yy",},},
     {"roomId":{"name":"player_room","path":"rooms/player_room/player_room.yy",},},
+    {"roomId":{"name":"BankAccountRoom","path":"rooms/BankAccountRoom/BankAccountRoom.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":3,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
