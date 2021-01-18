@@ -16,11 +16,11 @@ camera_set_view_mat(camera_id, vm);
 if (panning && !panned){
 	follow = noone;
 	
-	xTo = lerp(x, targetX, 0.8);
-	yTo = lerp(y, targetY, 0.8);
+	xTo = lerp(x, targetX, targetToSpeed);
+	yTo = lerp(y, targetY, targetToSpeed);
 				
-	width = lerp(width, targetWidth, 0.02);
-	height = lerp(height, targetHeight, 0.02);
+	width = lerp(width, targetWidth, targetSlideSpeed);
+	height = lerp(height, targetHeight, targetSlideSpeed);
 		
 	var pm = matrix_build_projection_ortho(width, height, 1, 10000);
 	camera_set_proj_mat(camera_id, pm);

@@ -68,3 +68,18 @@ if (sandwichIsNear && !inDialog)
 	sandwich_obj.bites++;
 }
 
+var tableIsNear = collision_circle(x, y, 35, obj_table_can_talk, false, false);
+if (tableIsNear && !inDialog && !spokenToTable)
+{
+	
+	// call event whenever close to npc0, for npc0 to listen and launch dialog
+	hall_dialog_begin();
+	
+	// prevent loading dialog while already in dialog
+	if (instance_exists(obj_dialog)){
+		inDialog = true;
+	}
+	
+	obj_table_can_talk.visible = false;
+	spokenToTable = true;
+}

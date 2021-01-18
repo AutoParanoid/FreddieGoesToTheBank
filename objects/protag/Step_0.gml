@@ -85,6 +85,7 @@ if (!inDialog)
 	} 
 	
 	with (obj_Camera){
+		follow = protag;
 		width = orig_width;
 		height = orig_height;
 		camera_set_proj_mat(camera_id, matrix_build_projection_ortho(width, height, 1, 10000));
@@ -174,4 +175,9 @@ else {
 			else sprite_index = protag_mal_idle;
 		}	
 	}
+}
+
+if (weirdEventOn && (obj_Camera.x <= room_width / 2 - 1 || obj_Camera.x >= room_width / 2 + 1)){
+	inDialog = true;
+	contemplation_dialog_begin();
 }

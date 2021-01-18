@@ -5,6 +5,9 @@
 ///@arg width_factor
 ///@arg height_factor
 ///@arg targetDialog
+///@arg quickMove
+///@arg targetToSpeed
+///@arg targetSlideSpeed
 
 function pan_camera(){
 	if (instance_exists(obj_Camera)){
@@ -18,6 +21,10 @@ function pan_camera(){
 				targetY = argument1;
 				targetWidth = orig_width / argument2;
 				targetHeight = orig_height / argument3;
+				if (argument_count > 6){
+					targetToSpeed = argument[6];
+					targetSlideSpeed = argument[7];
+				}
 				panned = false;
 				panning = true;
 			
@@ -26,11 +33,14 @@ function pan_camera(){
 				dialog_begin(argument4);
 				panning = false;
 				panned = true;
+				targetToSpeed = 0.8;
+				targetSlideSpeed = 0.02;
+				return true;
 			}
-			else
+			else if (argument[5])
 			{
 				event_perform_object(obj_Camera, ev_step, 0);
-				pan_camera(argument0, argument1, argument2, argument3, argument4);
+				if (pan_camera(argument0, argument1, argument2, argument3, argument4, argument[5])) return true;
 			}
 		}
 	}

@@ -4,6 +4,6 @@
 
 //y = sin(val*2) * 10 + 150;
 
-if (protag.beenToBank && !protag.beenToRoom0){
+if (protag.beenToBank && !protag.beenToRoom0 || protag.spokenToTable){
 	visible = true;	
 }

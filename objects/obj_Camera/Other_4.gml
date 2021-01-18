@@ -8,6 +8,8 @@ panning = false;
 panned = false;
 targetX = x;
 targetY = y;
+targetToSpeed = 0.8;
+targetSlideSpeed = 0.02;
 
 // create a new camera, conserve it's ID to be able to refer to it later
 camera_id = camera_create();

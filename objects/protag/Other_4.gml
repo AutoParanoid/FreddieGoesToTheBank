@@ -15,10 +15,16 @@ if (room = CityCentre){
 		inRoom0 = false;
 		inCenter = true;
 	}
-	else if (inCityHall){
+	else if (inCityHall && (!spokenToTable || seenTheLights)){
 		x = 392;
 		y = 160;
 		inCityHall = false;
+	}
+	else if (inCityHall && spokenToTable){
+		x = 392;
+		y = 160;
+		init_contemplation_dialog();
+		launch_weird_event();
 	}
 	else if (inBank){
 		x = 1270;
