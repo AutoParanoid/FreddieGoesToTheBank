@@ -5,6 +5,7 @@
 ///@arg width_factor
 ///@arg height_factor
 ///@arg targetDialog
+///@arg forceMove
 
 function pan_camera(){
 	if (instance_exists(obj_Camera)){
@@ -24,14 +25,13 @@ function pan_camera(){
 			}
 			if ((xTo <= targetX + 1) && (xTo >= targetX -1)){
 				dialog_begin(argument4);
-				protag.inDialog = true;
 				panning = false;
 				panned = true;
 			}
-			else
+			else if (argument5)
 			{
 				event_perform_object(obj_Camera, ev_step, 0);
-				pan_camera(argument0, argument1, argument2, argument3, argument4);
+				pan_camera(argument0, argument1, argument2, argument3, argument4, argument5);
 			}
 		}
 	}
