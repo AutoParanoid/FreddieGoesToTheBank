@@ -138,6 +138,7 @@ else if (room = player_room){
 	x = 100;
 	y = 93;
 	inPlayerRoom = true;	
+	beenToRoom0 = true;
 }
 else if (room = GrinderRoom){
 	inGrinder = true;	
