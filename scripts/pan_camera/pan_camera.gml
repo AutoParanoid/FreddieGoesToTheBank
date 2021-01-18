@@ -5,7 +5,6 @@
 ///@arg width_factor
 ///@arg height_factor
 ///@arg targetDialog
-///@arg forceMove
 
 function pan_camera(){
 	if (instance_exists(obj_Camera)){
@@ -28,10 +27,10 @@ function pan_camera(){
 				panning = false;
 				panned = true;
 			}
-			else if (argument5)
+			else
 			{
 				event_perform_object(obj_Camera, ev_step, 0);
-				pan_camera(argument0, argument1, argument2, argument3, argument4, argument5);
+				pan_camera(argument0, argument1, argument2, argument3, argument4);
 			}
 		}
 	}

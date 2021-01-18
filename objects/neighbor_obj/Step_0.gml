@@ -12,7 +12,7 @@ if (protagIsNear && !protag.talkedToNico0){
 else if (protag.talkedToNico0 && !protag.inDialog && x != updatedX0){
 	instance_destroy();
 }
-else if (x == updatedX0 && ((protag.x - neighbor_obj.x) < 200) && !protag.heardRamadan0){
+else if (x == updatedX0 && ((protag.x - neighbor_obj.x) < 200) && !protag.heardRamadan0 && !protag.inDialog){
 	dialog_begin_ramadan0();
 	
 	protag.inDialog = true;
