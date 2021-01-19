@@ -14,7 +14,7 @@ for (var i = 0; i < num_obj_surroundings; ++i)
 	{
 		
 		// if higher on display, treat as behind player
-		if (ds_list_find_value(list, i).y + sprite_get_height(ds_list_find_value(list, i).sprite_index) / 4 / camera_pixels_y * room_total_y <= y)
+		if (ds_list_find_value(list, i).y + sprite_get_height(ds_list_find_value(list, i).sprite_index) / 2 * ds_list_find_value(list, i).image_yscale  <= y)
 		{
 			//show_debug_message(y);
 			layer_depth(ds_list_find_value(list, i).layer, layer_get_depth(layer) + 1);
