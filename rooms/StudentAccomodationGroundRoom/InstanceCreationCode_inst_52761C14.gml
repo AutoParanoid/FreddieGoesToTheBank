@@ -1,0 +1,1 @@
+if (protag.seenTheLights) instance_destroy();

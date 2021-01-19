@@ -13,25 +13,18 @@ if (infoIsNear && !inDialog)
 }
 
 var smokerIsNear = collision_circle(x, y, 35, npc1, false, false);
+var conductIsNear = collision_circle(x, y, 35, obj_conductor, false, false);
 if (smokerIsNear && !inDialog)
-{
-	
+{	
 	// call event whenever close to npc0, for npc0 to listen and launch dialog
 	event_invoke(event.dialogCall_smoker);
 	
-	// prevent loading dialog while already in dialog
-	inDialog = true;
-}
-
-var conductIsNear = collision_circle(x, y, 35, obj_conductor, false, false);
-if (conductIsNear && !inDialog)
-{
 	
+}
+else if (conductIsNear && !inDialog)
+{
 	// call event whenever close to npc0, for npc0 to listen and launch dialog
 	event_invoke(event.dialogCall_conduct);
-	
-	// prevent loading dialog while already in dialog
-	inDialog = true;
 }
 
 var superGirlIsNear = collision_circle(x, y, 35, SupermarketGirl_obj, false, false);

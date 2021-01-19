@@ -22,7 +22,7 @@ if (room = CityCentre && protag.beenToBank && !protag.beenToRoom0){
 	}
 }
 else if (room = CityCentre && protag.spokenToTable){
-	draw_sprite_stretched(spr_dusk, 0, -room_width, -room_height, room_width * 2, room_height * 2);
+	draw_sprite_stretched(spr_dusk, 0, -room_width / 2, -room_height / 2, room_width * 2, room_height * 2);
 
 
 	if (instance_exists(obj_firefly)){

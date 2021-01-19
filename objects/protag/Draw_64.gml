@@ -3,7 +3,8 @@
 
 if (displayedGetOut && !displayedTab){
 	
-	draw_9slice(spr_dialog_frame, 0, 320, 90, 720, 516, 64, 64);
+	draw_9slice(spr_dialog_frame, 0, 320, 290, 720, 116, 64, 64);
+	draw_text_ext_transformed(400, 310, "You can now press tab to access         the Bank Form menu.", 20, 300, 2, 2, 0);
 	if (keyboard_check(vk_enter)){
 		displayedTab = true;
 	}
@@ -19,6 +20,3 @@ if (spokenWithBankTeller && room = CityCentre && !displayedTab){
 		displayedGetOut = true;
 	}
 }
-
-draw_text(10, 10, "score:");
-draw_text(40, 30, score);

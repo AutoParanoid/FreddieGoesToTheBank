@@ -117,7 +117,7 @@ else if (room = CityHallRoom){
 }
 else if (room = BankInteriorRoom){
 	x = 138;
-	y = 206;
+	y = 196;
 	inBank = true;
 }
 else if (room = CoffeeShopInternal){
@@ -145,6 +145,14 @@ else if (room = player_room){
 	y = 93;
 	inPlayerRoom = true;	
 	beenToRoom0 = true;
+	
+	if (heardRamadan1 && !beenToRoomAfterRamadan1){
+		if (!beenToRoomAfterRamadan1){
+			init_random_garbage();
+			dialog_begin(DIALOG_PROTAG_RANDOM);
+		}
+		beenToRoomAfterRamadan1 = true;
+	}
 }
 else if (room = GrinderRoom){
 	inGrinder = true;	

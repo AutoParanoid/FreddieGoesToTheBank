@@ -1,4 +1,5 @@
 /// @description 
+instance_create_layer(x, y, layer, obj_Camera);
 
 audio_play_sound(ambient, 10, true)
 
@@ -30,6 +31,7 @@ inDialog = false;
 event_register_script(event.dialogFinished, id, dialog_exit);
 
 // check to launch small indication after talking to bank teller
+spokenWithSmoker = false;
 spokenWithBankTeller = false;
 alreadySpokenWithBankTeller = false;
 
