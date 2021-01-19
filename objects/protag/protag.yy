@@ -38,6 +38,7 @@
     {"isDnD":false,"eventNum":9,"eventType":9,"collisionObjectId":null,"parent":{"name":"protag","path":"objects/protag/protag.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":9,"eventType":10,"collisionObjectId":null,"parent":{"name":"protag","path":"objects/protag/protag.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":5,"eventType":7,"collisionObjectId":null,"parent":{"name":"protag","path":"objects/protag/protag.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":4,"collisionObjectId":{"name":"CulturalObject_obj","path":"objects/CulturalObject_obj/CulturalObject_obj.yy",},"parent":{"name":"protag","path":"objects/protag/protag.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [
     {"varType":1,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":null,"multiselect":false,"filters":[

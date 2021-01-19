@@ -19,3 +19,6 @@ if (spokenWithBankTeller && room = CityCentre && !displayedTab){
 		displayedGetOut = true;
 	}
 }
+
+draw_text(10, 10, "score:");
+draw_text(40, 30, score);
