@@ -1,12 +1,16 @@
 /// @description Properly render game elements as before or behind player
 
+if (heardRamadan1 && !beenToRoomAfterRamadan1 && !inDialog){
+	room_goto(player_room);	
+}
+
 
 var list = ds_list_create();
 var num_obj_surroundings = collision_circle_list(x, y, 55, all, false, true, list, false);
 
 // get screen vertical dimension (in pixels, then in y) to be able to calculate height of in game sprites
-var camera_pixels_y = 720;
-var room_total_y = 768;
+//var camera_pixels_y = 720;
+//var room_total_y = 768;
 
 for (var i = 0; i < num_obj_surroundings; ++i)
 {
@@ -14,7 +18,7 @@ for (var i = 0; i < num_obj_surroundings; ++i)
 	{
 		
 		// if higher on display, treat as behind player
-		if (ds_list_find_value(list, i).y + sprite_get_height(ds_list_find_value(list, i).sprite_index) / 4 / camera_pixels_y * room_total_y <= y)
+		if (ds_list_find_value(list, i).y + sprite_get_height(ds_list_find_value(list, i).sprite_index) / 2 * ds_list_find_value(list, i).image_yscale  <= y)
 		{
 			//show_debug_message(y);
 			layer_depth(ds_list_find_value(list, i).layer, layer_get_depth(layer) + 1);

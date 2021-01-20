@@ -6,7 +6,7 @@ updatedX0 = 133;
 if (!protag.talkedToNico0){
 	init_nico0_dialog();	
 }
-else{
+else if (room = StudentAccomodationTopRoom){
 	x = updatedX0;
 	y = 205;
 	image_xscale = -image_xscale;
