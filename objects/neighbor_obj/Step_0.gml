@@ -20,8 +20,13 @@ else if (room = StudentAccomodationTopRoom && x == updatedX0 && ((protag.x - nei
 else if (room = StudentAccomodationTopRoom && protag.heardRamadan0){
 	instance_destroy();	
 }
-else if (room = StudentAccomodationGroundRoom && !protag.heardRamadan1  && ((protag.x - neighbor_obj.x) < 200) && !protag.heardRamadan1 && !protag.inDialog){
+else if (room = StudentAccomodationGroundRoom && !protag.heardRamadan1 && ((protag.x - neighbor_obj.x) < 200) && !protag.inDialog){
 	ramadan1_dialog_begin();
+	
+	protag.inDialog = true;
+}
+else if (room = StudentAccomodationGroundRoom && !protag.heardRamadan2 && protag.heardRamadan1  && ((protag.x - neighbor_obj.x) < 200) && !protag.inDialog && protag.beenToRoomAfterRamadan1){
+	ramadan2_dialog_begin();
 	
 	protag.inDialog = true;
 }

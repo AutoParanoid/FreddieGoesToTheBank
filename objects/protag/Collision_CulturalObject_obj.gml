@@ -1,3 +1,8 @@
 /// @description Insert description here
 // You can write your code in this editor
-score += 10;
+
+if (room = StudentAccomodationTopRoom){
+	displayIngSoc = true;
+}
+
+protag_score += 10;

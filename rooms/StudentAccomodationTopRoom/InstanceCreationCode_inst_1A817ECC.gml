@@ -1,0 +1,1 @@
+if (protag.heardRamadan1) instance_destroy();

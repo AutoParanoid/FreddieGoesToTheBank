@@ -43,15 +43,21 @@ if (superGirlIsNear && !inDialog)
 var bankTellerIsNear = collision_circle(x, y, 35, BankTeller_obj, false, false);
 if (bankTellerIsNear && !inDialog)
 {
+	if (!protag.heardRamadan2){
+		// call event whenever close to npc0, for npc0 to listen and launch dialog
+		event_invoke(event.bank1);
 	
-	// call event whenever close to npc0, for npc0 to listen and launch dialog
-	bank_dialog_begin();
-	
-	// prevent loading dialog while already in dialog
-	if (instance_exists(obj_dialog)){
+		// prevent loading dialog while already in dialog
+		if (instance_exists(obj_dialog)){
+			inDialog = true;
+			spokenWithBankTeller = true;
+			alreadySpokenWithBankTeller = true;
+		}
+	}
+	else{
+		event_invoke(event.bank2);
+		
 		inDialog = true;
-		spokenWithBankTeller = true;
-		alreadySpokenWithBankTeller = true;
 	}
 }
 

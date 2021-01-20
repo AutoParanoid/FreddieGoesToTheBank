@@ -9,6 +9,8 @@ enum event {
 	dialogCall_conduct,
 	dialogFinished,
 	dialogCall_coffeOut,
+	bank1,
+	bank2,
 	
 	
 }

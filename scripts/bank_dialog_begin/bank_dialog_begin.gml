@@ -4,4 +4,5 @@ function bank_dialog_begin(){
 	dialog_begin(DIALOG_BANK_0)
 	
 	protag.beenToBank = true;
+	return true;
 }

@@ -20,3 +20,12 @@ if (spokenWithBankTeller && room = CityCentre && !displayedTab){
 		displayedGetOut = true;
 	}
 }
+
+if (displayIngSoc){
+	draw_sprite_ext(spr_war_is_peace, 0, 100, 100, 1, 1, 0, c_white, 1);
+	displayIngSoc = false;	
+}
+
+draw_text(10, 10, "score:");
+draw_text(40, 30, protag_score);
+

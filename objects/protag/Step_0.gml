@@ -54,7 +54,7 @@ var horiz_spd = 0;
 var vert_spd = 0;
 
 // handle horizontal movement
-if (!inDialog)
+if (!inDialog && !immobile)
 {
 	if (diagonMv)
 	{
@@ -107,7 +107,7 @@ if collision_line(x, y, xprevious, yprevious, all, true, true)
 
 
 
-
+if (!immobile){
 if (keyboard_check(vk_shift)) {
 	mvspd = 16;
 	// animations
@@ -179,6 +179,7 @@ else {
 			else sprite_index = protag_mal_idle;
 		}	
 	}
+}
 }
 
 if (weirdEventOn && (obj_Camera.x <= room_width / 2 - 1 || obj_Camera.x >= room_width / 2 + 1)){
