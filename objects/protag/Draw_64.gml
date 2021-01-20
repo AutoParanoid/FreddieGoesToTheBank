@@ -28,4 +28,3 @@ if (displayIngSoc){
 
 draw_text(10, 10, "score:");
 draw_text(40, 30, protag_score);
-
